@@ -1,0 +1,12 @@
+.gwt-Image,
+.x-panel-header-text-areamodule {
+    margin-bottom: 0!important;
+}
+img.gwt-Image {
+    margin: 0 !important;
+    width: inherit !important;
+    height: inherit !important;
+}
+.slick-list {
+    overflow: auto !important;
+}

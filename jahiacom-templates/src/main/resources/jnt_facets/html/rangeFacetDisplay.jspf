@@ -1,0 +1,46 @@
+<%@ taglib prefix="jcr" uri="http://www.jahia.org/tags/jcr" %>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<%@ taglib prefix="fn" uri="http://java.sun.com/jsp/jstl/functions" %>
+<%@ taglib prefix="template" uri="http://www.jahia.org/tags/templateLib" %>
+<%@ taglib prefix="facet" uri="http://www.jahia.org/tags/facetLib" %>
+<%--@elvariable id="currentNode" type="org.jahia.services.content.JCRNodeWrapper"--%>
+<%--@elvariable id="out" type="java.io.PrintWriter"--%>
+<%--@elvariable id="script" type="org.jahia.services.render.scripting.Script"--%>
+<%--@elvariable id="scriptInfo" type="java.lang.String"--%>
+<%--@elvariable id="workspace" type="java.lang.String"--%>
+<%--@elvariable id="renderContext" type="org.jahia.services.render.RenderContext"--%>
+<%--@elvariable id="currentResource" type="org.jahia.services.render.Resource"--%>
+<%--@elvariable id="url" type="org.jahia.services.render.URLGenerator"--%>
+<%--@elvariable id="acl" type="java.lang.String"--%>
+
+<c:set var="valueCount" value="0"/>
+
+<c:forEach items="${currentFacet.counts}" var="facetValue">
+    <c:if test="${not facet:isFacetValueApplied(facetValue, activeFacetsVars[activeFacetMapVarName])}">
+        <c:set var="valueCount" value="${valueCount+1}"/>
+        <c:url var="facetUrl" value="${url.mainResource}">
+            <c:param name="${facetTargetTypeName}" value="${functions:encodeUrlParam(facetListNodeType)}" />
+            <c:param name="${facetParamVarName}" value="${functions:encodeUrlParam(facet:getFacetDrillDownUrl(facetValue, activeFacetsVars[facetParamVarName]))}"/>
+        </c:url>
+        <c:set var="dropDownContent">
+            ${dropDownContent}
+            <a class="dropdown-item" href="${facetUrl}${'#'}${anchorName}" rel="nofollow">
+                <facet:facetValueLabel currentFacetFieldName="${currentFacet.name}" facetValueCount="${facetValue}" facetValueLabels="${facetValueLabels}" facetValueFormats="${facetValueFormats}" facetValueRenderers="${facetValueRenderers}" facetValueNodeTypes="${facetValueNodeTypes}"/>
+            </a>
+        </c:set>
+    </c:if>
+</c:forEach>
+
+<c:if test="${valueCount>1}">
+    <div class="dropdown pr-3">
+        <a class="dropdown-toggle gris" id="dropdown${currentFacet.name}" href="#" role="button" data-toggle="dropdown"
+           aria-haspopup="true" aria-expanded="false">
+            <facet:facetLabel currentFacetFieldName="${currentFacet.name}" facetLabels="${facetLabels}"/>
+        </a>
+        <div class="dropdown-menu" aria-labelledby="dropdown${currentFacet.name}">
+                ${dropDownContent}
+        </div>
+    </div>
+</c:if>
+<c:remove var="valueCount"/>
+<c:remove var="dropDownContent"/>

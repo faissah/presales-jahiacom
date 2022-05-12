@@ -1,0 +1,5 @@
+org/jahia/modules/jahiacom/taglibs/HrefLangTag.class
+org/jahia/modules/jahiacom/Functions.class
+org/jahia/modules/jahiacom/taglibs/SwitchToLanguageTag.class
+org/jahia/modules/jahiacom/initializers/JahiacomLinkTypeInitializer.class
+org/jahia/modules/jahiacom/initializers/JahiacomResourceTypesInitializer.class

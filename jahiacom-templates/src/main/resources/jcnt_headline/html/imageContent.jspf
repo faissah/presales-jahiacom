@@ -1,0 +1,50 @@
+<c:choose>
+    <c:when test="${jcr:isNodeType(currentNode,'jcmix:headlineVideo')}">
+        <c:set var="provider" value="${currentNode.properties.provider.string}"/>
+        <c:set var="id" value="${currentNode.properties.id.string}"/>
+        <c:set var="addPlayIcon" value="${currentNode.properties.addPlayIcon.boolean}"/>
+        <c:choose>
+            <c:when test="${provider eq 'youtube'}">
+                <c:set var="videoUrl" value="//www.youtube.com/watch?v=${id}"/>
+                <a data-fancybox href="${videoUrl}" class="${addPlayIcon ? 'playMe' : ''}">
+                    <template:include view="hidden.image"/>
+                </a>
+            </c:when>
+            <c:when test="${provider eq 'vimeo'}">
+                <c:set var="videoUrl" value="//player.vimeo.com/video/${id}"/>
+                <a data-fancybox href="${videoUrl}" class="${addPlayIcon ? 'playMe' : ''}">
+                    <template:include view="hidden.image"/>
+                </a>
+            </c:when>
+            <c:when test="${provider eq 'wistia'}">
+                <script src="https://fast.wistia.com/embed/medias/${id}.jsonp" async></script><script
+                    src="https://fast.wistia.com/assets/external/E-v1.js" async></script><div class="wistia_responsive_padding"
+                                                                                              style="padding:56.25% 0 0 0;position:relative;"><div class="wistia_responsive_wrapper"
+                                                                                                                                                   style="height:100%;left:0;position:absolute;top:0;width:100%;"><span
+                    class="wistia_embed wistia_async_${id} popover=true popoverAnimateThumbnail=true videoFoam=true"
+                    style="display:inline-block;height:100%;position:relative;width:100%">&nbsp;</span></div></div>
+            </c:when>
+        </c:choose>
+
+        <template:addResources type="javascript" resources="jquery.min.js,jquery.fancybox.min.js"/>
+        <template:addResources type="css" resources="jquery.fancybox.min.css"/>
+        <template:addResources type="inline" targetTag="body">
+            <script>
+                $('[data-fancybox]').fancybox({
+                    youtube : {
+                        controls : 0,
+                        showinfo : 0,
+                        autoplay : 1
+                    },
+                    vimeo : {
+                        color : 'f00',
+                        autoplay : 1
+                    }
+                });
+            </script>
+        </template:addResources>
+    </c:when>
+    <c:otherwise>
+        <template:include view="hidden.image"/>
+    </c:otherwise>
+</c:choose>
