@@ -1,0 +1,1355 @@
+﻿@import url('https://fonts.googleapis.com/css?family=Roboto:300,400');
+/* Please see documentation at https://docs.microsoft.com/aspnet/core/client-side/bundling-and-minification
+for details on configuring this project to bundle and minify static web assets. */
+
+/*a.navbar-brand {
+  white-space: normal;
+  text-align: center;
+  word-break: break-all;
+}*/
+
+/* Sticky footer styles
+-------------------------------------------------- */
+/*html {
+
+}*/
+
+/*.border-top {
+  border-top: 1px solid #e5e5e5;
+}
+
+#form1 .border-bottom {
+  border-bottom: 1px solid #e5e5e5;
+}
+
+#form1 .box-shadow {
+  box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05);
+}
+
+#form1 button.accept-policy {
+  font-size: 1rem;
+  line-height: inherit;
+}*/
+
+/* Sticky footer styles
+-------------------------------------------------- */
+
+
+
+
+body .box-3 {
+     padding: 119px 0 40px 0!important;
+}
+
+html {
+    position: relative;
+    min-height: 100%;
+    font-size: 12pt;
+}
+
+#form1 body {
+    /* Margin bottom by footer height */
+    margin: 0px;
+    background: #fff;
+    overflow: hidden;
+    font-family: Roboto;
+}
+
+#form1 input, #form1 select, #form1 textarea {
+    outline: none;
+    border: 1px solid #ccc !important;
+    -webkit-box-shadow: none !important;
+    -moz-box-shadow: none !important;
+    box-shadow: none !important;
+}
+
+#form1 input:focus, #form1 select:focus, #form1 textarea:focus {
+    border: 1px solid #0094ff !important;
+}
+
+#form1 a, #form1 a.button, #form1 .button {
+    color: #0094ff !important;
+    text-decoration: none !important;
+}
+
+    #form1 a.button:hover, #form1 .button:hover {
+        color: #fff !important;
+        background: #0094ff !important;
+    }
+
+    /*a:active {
+        text-decoration: none;
+    }*/
+
+    a.link-gray
+    {
+        color: #8f8f8f !important;
+    }
+
+#form1 .header {
+    display: none;
+    /*position: absolute;*/
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 3;
+    width: 100%;
+    box-shadow: 0px 0px 5px rgba(0,0,0,0.7);
+    float: left;
+    background: #fff;
+}
+
+#form1 h4, #form1 h5 {
+    font-weight: 200;
+}
+
+#form1 .app-title {
+    background: #e0e4e7;
+    height: 20px;
+}
+
+    #form1 .app-title h1 {
+        font-size: 10pt;
+        line-height: 20px;
+        margin: 0;
+        color: #717577;
+        text-align: center;
+        font-weight: 200;
+    }
+
+#form1 .navbar-wrapper {
+    background: #eef1f3;
+    height: 50px;
+    width: 100%;
+    position: relative;
+}
+
+    #form1 .navbar-wrapper .button {
+        padding: 8px 20px;
+        font-size:10pt;
+    }
+
+    #form1 .navbar-wrapper .nav-icon {
+        float: left;
+    }
+
+    #form1 .navbar-wrapper .logo {
+        background: url(https://duckscdn.blob.core.windows.net/imagescontainer/landing-pages/migration/images/2019/logo-small.png) center center no-repeat;
+        width: 50px;
+        height: 50px;
+        background-size: contain;
+        margin: 0 auto;
+    }
+
+    #form1 .navbar-wrapper .logo a{
+        display:block;
+        width:100%;
+        height:100%;
+    }
+
+    #form1 .navbar-wrapper .nav-links
+    {
+        float: left;
+        font-size: 10pt;
+        position: absolute;
+        top: 15px;
+    }
+
+
+        #form1 .navbar-wrapper .nav-links a
+        {
+            color: #333 !important;
+        }
+
+        #form1 .navbar-wrapper .nav-links a:hover {
+            text-decoration: underline !important;
+        }
+
+        #form1 .navbar-wrapper .nav-links .item {
+            float: left;
+            margin-left: 20px;
+        }
+
+    #form1 .menu-icon-burger {
+        font-size: 36px;
+        margin: 10px 0px 0px 10px;
+    }
+
+#form1 .sidenav
+{
+
+}
+#form1 .menu-top-row
+{
+    position:absolute;
+    float:left;
+    width:100%;
+    background:transparent;
+}
+#form1 .menu-top-row .nav-item-left {
+    float:left;
+    width: 50%;
+
+}
+    #form1 .menu-top-row .nav-item-right {
+        float: right;
+        width: 50%;
+        text-align: right;
+        margin-right: 20px;
+    }
+
+#form1 .clear{
+    clear:both;
+}
+
+#form1 .menu-user-wrapper
+{
+    width:100%;
+    position:relative;
+}
+#form1 .nav-user {
+    width: 75%;
+    height:100px;
+    background: #fff;
+
+    margin: 50px;
+}
+#form1 .nav-submit {
+    position: relative;
+}
+#form1 .menu-icon {
+    font-size: 20px;
+    margin: 0px 10px 0px 10px;
+}
+
+#form1 .tools-wrapper {
+    padding: 10px;
+    background: #fff;
+    width: 100%;
+    min-height:120px;
+    margin: 0px;
+    /*left: 0px;*/
+    float: left;
+    position: fixed;
+    z-index: 2;
+    /*position: fixed;
+    top: 60px;*/
+    box-shadow: 0px 0px 5px rgba(0,0,0,0.7);
+    pointer-events: auto;
+}
+
+    /*.search-wrapper #div-map-list-toggler {
+        color: #0094ff;
+        text-align: center;
+    }*/
+
+.fa-times-circle.right{
+    position: absolute;
+    top: 10px;
+    right: 7px;
+    color: #8f8f8f;
+    z-index: 12;
+    cursor: pointer;
+}
+
+#form1 .input-group-addon
+{
+    background: #ccc;
+    padding: 5px 10px;
+}
+
+#form1 .search-wrapper {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #eef1f3;
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+}
+
+    #form1 .search-wrapper .div-search-box {
+        flex: 3;
+        position: relative;
+    }
+
+        #form1 .search-wrapper .div-search-box .fa-search {
+            position: absolute;
+            top: 10px;
+            left: 7px;
+            color: #8f8f8f;
+            z-index: 12;
+        }
+
+        #form1 .search-wrapper .div-search-box .fa-location-arrow {
+            position: absolute;
+            top: 10px;
+            right: 7px;
+            color: #0094ff;
+        }
+
+        #form1 .search-wrapper .div-search-box #report-search {
+            width: 100%;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            padding: 5px;
+            text-indent: 30px;
+        }
+#form1 #div-front-search-box.search-active {
+    border: 1px solid red;
+    border-radius: 5px;
+}
+#form1 #div-front-search-box.search-inactive {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+        #form1 .search-wrapper .div-search-box #report-panel-search_location {
+            width: 100%;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            padding: 5px;
+            text-indent: 30px;
+        }
+        #form1 .search-wrapper .div-search-box #report-panel-search_date {
+            width: 100%;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            padding: 5px;
+            text-indent: 30px;
+        }
+
+    #form1 .search-wrapper .map-list-toggle-wrapper {
+        color: #0094ff;
+        text-align: center;
+        flex: 1;
+        /*font-size: 14pt;*/
+    }
+
+#form1 #div-no-prediction-used-alert
+{
+    font-size:12px;
+    border:1px solid red;
+    padding:10px;
+    border-radius:5px;
+    background:#efefef;
+    display:none;
+}
+#form1 #div-datepicker-container {
+}
+#form1 .pac-container /*the autocomplete results container*/ {
+    z-index: 10000;
+}
+
+#form1 #filter-items-wrapper {
+    width: 100%;
+    background: #fff;
+    float: left;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+    #form1 #filter-items-wrapper .items {
+        flex: 3;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 100%;
+    }
+
+        #form1 #filter-items-wrapper .items .filter-item {
+            flex: 1;
+            flex-direction: column;
+            border: 1px solid #ccc;
+            padding: 5px 10px;
+            border-radius: 5px;
+            text-align: center;
+        }
+
+            #form1 #filter-items-wrapper .items .filter-item.item-1, #form1 #filter-items-wrapper .items .filter-item.item-2 {
+                flex: .8 0 0;
+            }
+
+            #form1 #filter-items-wrapper .items .filter-item:not(:last-of-type) {
+                margin: 0px 5px 0px 0px;
+            }
+
+    #form1 #filter-items-wrapper #reset-filters {
+        flex: 1;
+        flex-direction: column;
+        text-align: center;
+        color: #0094ff;
+        visibility: hidden;
+        cursor: pointer;
+    }
+
+#form1 #filters-options-wrapper {
+    width: 100%;
+    background: #fff;
+    float: left;
+    display: none;
+    padding: 30px 0 20px 0;
+    text-align: center;
+}
+
+    #form1 #filters-options-wrapper .filter-options label {
+        font-size: 12pt;
+        line-height: 120%;
+    }
+
+    #form1 #filters-options-wrapper p.filter-options-title {
+        text-align: left;
+        font-size: 10pt;
+        color: #888;
+        margin-bottom: 0;
+    }
+
+    #form1 #filters-options-wrapper hr
+    {
+        margin: 10 0 30px 0;
+    }
+
+    /* start switches for filters*/
+    input[type=checkbox].switch {
+        border: 0;
+        clip: rect(0 0 0 0);
+        height: 1px;
+        margin: -1px;
+        overflow: hidden;
+        padding: 0;
+        position: absolute;
+        width: 1px;
+    }
+
+    #form1 input[type=checkbox].switch + label:before {
+        font-family: "Font Awesome 5 Pro";
+        display: inline-block;
+        content: "\f204";
+        font-size: 26pt;
+        color: #8f8f8f;
+        font-weight: 300;
+        vertical-align: middle;
+        cursor: pointer;
+    }
+
+#form1 #filters-options-wrapper input[type=checkbox].switch + label:before {
+    margin-bottom: 10px;
+}
+
+        #form1 input[type=checkbox].switch:checked + label:before {
+            content: "\f205";
+            font-weight: 400;
+        }
+
+        #form1 input[type=checkbox].switch.blue:checked + label:before {
+            color: #2d82e2;
+        }
+
+        #form1 input[type=checkbox].switch.green:checked + label:before {
+            color: #5db636;
+        }
+
+        #form1 input[type=checkbox].switch.purple-light:checked + label:before {
+            color: #b258b6;
+        }
+
+        #form1 input[type=checkbox].switch.purple:checked + label:before {
+            color: #835f99;
+        }
+
+        #form1 input[type=checkbox].switch.yellow:checked + label:before {
+            color: #eed614;
+        }
+
+        #form1 input[type=checkbox].switch.gray:checked + label:before {
+            color: #cccccc;
+        }
+
+    /* end switches for filters*/
+
+    /* start slider for activity*/
+    #filters-options-wrapper #fltr-ext-activity .slider-tick {
+        border: 1px solid #ccc;
+    }
+
+        #form1 #filters-options-wrapper #fltr-ext-activity .slider-tick.in-selection {
+            background-image: linear-gradient(to bottom,#form1 #f9f9f9 0,#form1 #f5f5f5 100%);
+        }
+
+    #form1 #filters-options-wrapper #fltr-ext-activity .slider-tick-label-container {
+        display: none;
+    }
+
+    #form1 #filters-options-wrapper #fltr-ext-activity .slider-selection, #form1 #filters-options-wrapper #fltr-ext-activity .tick-slider-selection {
+        background: none;
+        box-shadow: none;
+    }
+/* end slider for activity*/
+
+.filter-engaged {
+    border: 1px solid red;
+}
+
+#form1 .filter-span-inner-reset {
+    border: 1px solid #ccc;
+    color: red;
+    padding: 2px;
+}
+
+#form1 .hide {
+    display: none;
+}
+
+#form1 .show {
+    display: block;
+}
+
+#form1 .down-caret, #form1 .open-caret {
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 5px 5px 0 5px;
+    border-color: #000 transparent transparent transparent;
+    display: inline-block;
+    margin-left: 6px;
+    top: 10px;
+    position: relative;
+    display: none;
+    float: right;
+}
+
+#form1 .down-caret {
+    transform: rotate(0deg);
+    transition: all .25s ease-in;
+}
+
+#form1 .open-caret {
+    transform: rotate(180deg);
+    transition: all .25s ease-out;
+}
+
+#form1 .infoWindowWrapper
+{
+    text-align:center;
+}
+
+#form1 .button {
+    padding: 10px 20px;
+    border: 1px solid #0094ff !important;
+    border-radius: 15px;
+    color: #0094ff;
+    text-align: center;
+    line-height: 100%;
+    background: transparent;
+    display: block;
+}
+
+    #form1 .button.report
+    {
+        border:0;
+    }
+
+        #form1 .button.report-reverse {
+            background: #0094ff;
+            color: #fff !important;
+            border:1px solid #fff !important;
+            text-shadow: -1px -1px 0px rgbA(0,0,0,0.3);
+        }
+
+            #form1 .button.report-reverse:hover {
+                background: #00b9ff !important;
+            }
+
+    #form1 .button.map-list
+    {
+        border-radius: 5px;
+        background: #4f4f4f;
+        color: #fff !important;
+        border: 0px !important;
+        width: 90%;
+        float:right;
+    }
+
+#form1 .hiLite {
+    background: #efefef;
+}
+
+#form1 .lowLite {
+    background: transparent;
+}
+
+#form1 .footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    white-space: nowrap;
+    /* Set the fixed height of the footer here */
+}
+
+#form1 .content-wrapper {
+    margin-top: 70px;
+    height:100%;
+}
+
+#form1 .column-1 {
+    /*background: #fff;
+    border-right: 1px solid #ccc;
+    float: left;
+    margin: 0px;*/
+    /*display: none;*/
+}
+
+#form1 #map-container
+{
+    /*margin-top: 120px;*/
+}
+
+#form1 #div-map {
+    position: relative;
+    width: 100%;
+    top: 120px;
+}
+
+#form1 .map-options {
+    background: #fff;
+    width: 130px;
+    border-radius: 0 10px 10px 0;
+    position: absolute;
+    top: 30px;
+    left: 0;
+    z-index: 1;
+    padding: 10px 20px;
+    box-shadow: 0px 0px 5px rgba(0,0,0,0.7);
+    float: left;
+    opacity: .9;
+}
+
+    #form1 .map-options .item {
+        float: left;
+        line-height: 100%;
+    }
+
+#form1 .map-submit-md {
+    position: absolute;
+    top: 30px;
+    left: 160px;
+    z-index: 1;
+}
+
+#form1 .column-2 {
+    /*float: left;
+    width: 100%;
+    padding: 0px;
+    overflow: auto;
+    height: 100%;
+    top: 180px;*/
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+
+#form1 #report-list-container
+{
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    z-index: 1;
+    margin-top: 120px;
+    background: #fff;
+}
+
+#form1 .report-list-wrapper {
+    position: absolute;
+    overflow: auto;
+    width: 100%;
+    margin: 0px;
+    top: 0;
+    bottom: 0;
+    -webkit-overflow-scrolling: touch;
+}
+
+#form1 .no-pointer-events
+{
+    pointer-events: none;
+}
+
+#form1 .auto.pointer-events
+{
+    pointer-events: auto;
+}
+
+#form1 .report-list-item-wrapper {
+    width: 100%;
+    background: #faf8f9;
+    float: left;
+    padding: 20px;
+    border-bottom: 1px solid #ccc;
+    position: relative;
+    cursor: pointer;
+}
+
+    #form1 .report-list-item-wrapper .hint-bar {
+        width: 5px;
+        position: absolute;
+        /*height: 100%;*/
+        left: 0;
+        top: 0;
+        bottom: 0;
+        /*float: left;
+        margin: -21px 0;*/
+        /*border-top: 1px solid #faf8f9;*/
+    }
+
+        #form1 .report-list-item-wrapper .hint-bar.alerts {
+            background: #5db636;
+        }
+
+        #form1 .report-list-item-wrapper .hint-bar.public {
+            background: #2d82e2;
+        }
+
+        #form1 .report-list-item-wrapper .hint-bar.biologist {
+            background: #835f99;
+        }
+
+        #form1 .report-list-item-wrapper .hint-bar.house {
+            background: #efac0b;
+        }
+
+    #form1 .report-list-item-wrapper.house-item {
+        background: #fff;
+        background-image: linear-gradient(to right, #form1 #fef5d4, #form1 #fff);
+    }
+
+#form1 .report-list-item {
+    cursor: pointer;
+    width: 100%;
+    float: left;
+    /*background: #faf8f9;*/
+}
+#form1 .list-item-join {
+    cursor: pointer;
+    width: 100%;
+    background: #006600;
+    color: #fff;
+}
+
+    #form1 .report-list-item .alert-label {
+        color: #5db636;
+    }
+    #form1 .report-list-item .biologist-label {
+        color: #835f99;
+    }
+
+#form1 .div-member-badge {
+    background: url(../images/du_shield.png) no-repeat;
+    background-size: contain;
+    width: 20px;
+    float: left;
+    margin: 0px 10px 0px 0px;
+}
+
+#form1 .div-badge-placeholder {
+    width: 20px;
+    height: 20px;
+    float: left;
+    margin: 0px 10px 0px 0px;
+    border-radius: 10px;
+}
+
+#form1 .item-detail-property {
+    font-size: .8em;
+    margin: 0px 0px 0px 0px;
+}
+
+#form1 .item-date {
+    /*float: right;*/
+    margin-right: 20px;
+    color: #8f8f8f;
+    font-size: 10pt;
+}
+
+#form1 .item-activity {
+}
+
+#form1 .list-item-hr {
+    float: left;
+    width: 100%;
+}
+
+#form1 .reporterName {
+    font-weight: bold;
+}
+
+#form1 .item-detail-activity {
+    font-size: .8em;
+    background: whitesmoke;
+    border: 1px solid #efefef;
+    padding: 5px;
+    text-align: center;
+}
+
+#form1 .item-detail-comment {
+    font-family: 'Times New Roman';
+    font-style: italic;
+    margin: 0px 0px 20px 0px;
+    border: 1px solid #ccc;
+    background: #efefef;
+    border-radius: 3px;
+    padding: 5px;
+}
+
+#form1 #report-list-item-detail {
+    position: absolute;
+    top: 100px;
+    right: -100px;
+    background: #fff;
+    padding: 10px;
+    display: none;
+    overflow: hidden;
+    border-radius: 10px;
+    border: 1px solid #cccccc;
+}
+
+#form1 #report-detail-ad {
+    background: #eef1f3;
+    width: 300px;
+    height: 250px;
+    margin: auto auto;
+    margin-top: 30px;
+    border: 1px solid #ccc;
+}
+
+#form1 #span-report-close {
+    border: 1px solid #ccc;
+    background: #efefef;
+    border-radius: 3px;
+    padding: 0px 0px 0px 3px;
+    cursor: pointer;
+}
+
+#form1 #div-viewport-reports-count {
+    width: 100%;
+    background: #ccc;
+    text-align: center;
+}
+
+#form1 #div-viewport-previous {
+    float: right;
+    text-align: right;
+}
+
+#form1 .btnBack {
+    padding: 3px;
+    background: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 10pt;
+    margin: 10px 0px 5px 0px;
+}
+
+#form1 .fixed {
+    position: fixed;
+    z-index: 1;
+}
+
+#form1 #divReportScroller
+{
+    padding: 20px 0;
+}
+
+#form1 .divReportDetailNavWrapper
+{
+    background: #acacac;
+    color: #fff;
+    cursor: pointer;
+    text-align:center;
+    font-size: 10pt;
+    font-weight: 200;
+}
+
+    #form1 .divReportDetailNavWrapper .col
+    {
+        padding:5px;
+        border-left:1px solid #fff;
+    }
+
+#form1 .divReportsColumn1LinkOn, #form1 .divReportsColumn2LinkOn, #form1 .divReportsColumn3LinkOn {
+    background: #0094ff;
+}
+
+#form1 .divReportDetailWrapper, #form1 .clsNwsWthrFrctWrapper {
+    /*background: #fff;*/
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0,0,0,0.3);
+    margin: 20px 0;
+}
+
+    #form1 .divReportDetailWrapper.featured {
+        /*background: #efefef;
+        padding: 5px;*/
+    }
+
+    #form1 .divReportDetailWrapper .date {
+        font-size: 16pt;
+    }
+
+#form1 .divReportsColumn1Ad
+{
+    margin: 20px 0;
+}
+
+#form1 .clsNwsWthrFrctItemIcon
+{
+    float: left;
+    margin-right: 20px;
+}
+
+    #form1 .clsNwsWthrFrctItemIcon img {
+        border-radius: 50%;
+    }
+
+    #form1 .clsNwsWthrFrctItemHeader {
+        margin-bottom: 20px;
+    }
+/*#search-header
+{
+    position:fixed;
+    z-index:1;
+    padding:10px;
+    height:50px;
+    background:#efefef;
+    width:100%;
+    margin:0px;
+    left:0px;
+    float:left;
+}*/
+/*#search-filter {
+    top: 0px;
+}*/
+/* vertical splitter panel */
+.panel-container-vertical {
+    display: flex;
+    flex-direction: column;
+    height: 500px;
+    border: 1px solid silver;
+    overflow: hidden;
+}
+
+#form1 .panel-top {
+    flex: 0 0 auto;
+    /* only manually resize */
+    /*padding: 10px;*/
+    width: 100%;
+    white-space: nowrap;
+    background: #838383;
+    color: white;
+    margin: 0px;
+}
+
+#form1 .splitter-horizontal {
+    flex: 0 0 auto;
+    height: 18px;
+    background: url(https://raw.githubusercontent.com/RickStrahl/jquery-resizable/master/assets/hsizegrip.png) center center no-repeat #535353;
+    cursor: row-resize;
+    z-index: 100000
+}
+
+#form1 .panel-bottom {
+    flex: 1 1 auto;
+    /* resizable */
+    /*padding: 10px;*/
+    min-height: 200px;
+    background: #eee;
+}
+
+/*label {
+    font-size: 1.2em;
+    display: block;
+    font-weight: bold;
+    margin: 30px 0 10px;
+}*/
+
+#preload-hidden {
+    position: absolute;
+    top: -100px;
+    visibility: hidden;
+}
+
+#form1 #divLocationContainer {
+    width: 100%;
+}
+
+#form1 #divLocationContainer #divVerifyLocationStatus {
+    display: none;
+    border: 1px solid red;
+    padding: 10px;
+    float: left;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+#form1 .login-help-wrapper
+{
+    border-top:1px solid #ccc;
+    margin-top:20px;
+    padding-top:20px;
+    text-align:center;
+}
+
+    #form1 .login-help-wrapper i
+    {
+        font-size: smaller;
+    }
+
+#form1 #divLogInFromSubmission {
+    display: none;
+}
+
+#form1 #divLoginResponse
+{
+
+    color: red;
+    display:none;
+    margin: 10px 0;
+    text-align:center;
+}
+
+#form1 #modal-login {
+    display: none;
+    position: absolute;
+    left: 50%;
+    top: 40%;
+    transform: translate(-50%, -50%);
+    background: #fff;
+    z-index: 2001;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 0 25px rgba(0,0,0,0.7);
+    width: 100%;
+    max-width: 300px;
+}
+
+#form1 .page-mask {
+    background: rgba(0, 0, 0, 0.5);
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 2000;
+    display: none;
+}
+
+#form1 #divPublicSubmitAlert {
+    display: none;
+}
+
+#form1 .submission-errors {
+    color: red;
+    border: 1px solid red;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+/*MENU: START*/
+/* The side navigation menu */
+.sidenav {
+    height: 100%; /* 100% Full-height */
+    width: 0; /* 0 width - change this with JavaScript */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Stay on top */
+    top: 0; /* Stay at the top */
+    left: 0;
+    max-width: 95%;
+    background-color: #efefef;
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 60px; /* Place content 60px from the top */
+    transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+}
+
+    /* The navigation menu links */
+    .sidenav a {
+        /*padding: 8px 8px 8px 32px;*/
+        text-decoration: none;
+        font-size: 18px;
+        display: block;
+        transition: 0.3s;
+    }
+
+        /* When you mouse over the navigation links, #form1 change their color */
+        .sidenav a:hover {
+            color: #f1f1f1;
+        }
+
+    /* Position and style the close button (top right corner) */
+    .sidenav .closebtn {
+        position: absolute;
+        top: 0;
+        font-size: 18px;
+        margin-left: 20px;
+        color: #000;
+    }
+
+/* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+#main {
+    transition: margin-left .5s;
+    padding: 20px;
+}
+
+/* On smaller screens, #form1 where height is less than 450px, #form1 change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+    .sidenav {
+        padding-top: 15px;
+    }
+
+        #form1 .sidenav a {
+            font-size: 18px;
+        }
+}
+/*MENU: END*/
+
+/*FOOTER AD MOBILE START*/
+#div-footer-fixed-ad-mobile {
+    position: fixed;
+    bottom: 0px;
+    height: 60px;
+    width: 100%;
+    background: #eef1f3;
+    border-top: 1px solid #ccc;
+    padding-top: 5px;
+    text-align:center;
+    z-index: 4;
+}
+/*FOOTER AD MOBILE END*/
+
+/*MODAL START*/
+
+.toast {
+    z-index: 5000 !important;
+    box-shadow: 0 0.25rem 0.75rem rgba(0,0,0,.7) !important;
+}
+
+#form1 .modal-header .close {
+    font-size: 28pt;
+}
+
+#form1 .modal {
+    -webkit-overflow-scrolling: touch;
+}
+
+#form1 .modal.left .modal-dialog,
+#form1 .modal.right .modal-dialog {
+    position: fixed;
+    margin: auto;
+    width: 95%;
+    height: 100%;
+    -webkit-transform: translate3d(0%, 0, 0);
+    -ms-transform: translate3d(0%, 0, 0);
+    -o-transform: translate3d(0%, 0, 0);
+    transform: translate3d(0%, 0, 0);
+}
+
+#form1 .modal.left .modal-content,
+#form1 .modal.right .modal-content {
+    height: 100%;
+    overflow-y: auto;
+}
+
+#form1 .modal.left .modal-body,
+#form1 .modal.right .modal-body {
+    padding: 15px 15px 80px;
+}
+
+/*Left*/
+.modal.left.fade .modal-dialog {
+    left: -95%px;
+    -webkit-transition: opacity 0.3s linear, #form1 left 0.3s ease-out;
+    -moz-transition: opacity 0.3s linear, #form1 left 0.3s ease-out;
+    -o-transition: opacity 0.3s linear, #form1 left 0.3s ease-out;
+    transition: opacity 0.3s linear, #form1 left 0.3s ease-out;
+}
+
+#form1 .modal.left.fade.show .modal-dialog {
+    left: 0;
+}
+/*Right*/
+.modal.right.fade .modal-dialog {
+    right: -95%;
+    -webkit-transition: opacity 0.3s linear, #form1 right 0.3s ease-out;
+    -moz-transition: opacity 0.3s linear, #form1 right 0.3s ease-out;
+    -o-transition: opacity 0.3s linear, #form1 right 0.3s ease-out;
+    transition: opacity 0.3s linear, #form1 right 0.3s ease-out;
+}
+
+#form1 .modal.right.fade.show .modal-dialog {
+    right: 0;
+}
+
+/*MODAL END*/
+
+/*start media queries*/
+@media (min-width: 350px) {
+    #filter-items-wrapper .items .filter-item {
+        text-align: left;
+    }
+
+    /*show filter carets if not on a small screen*/
+    .down-caret, #form1 .open-caret {
+        display: inline-block;
+    }
+}
+
+@media (min-width: 768px) {
+    html {
+        font-size: 16px;
+    }
+    /*.column-1 {
+        width:50%;
+        height:100%;
+    }
+
+    #form1 .column-2 {
+        width: 50%;
+        height: 100%;
+    }*/
+}
+
+@media (min-width: 992px) {
+    .navbar-wrapper .nav-links {
+        float: left;
+        margin: 0px 0 0 10px;
+        font-size: 10pt;
+        position: relative;
+    }
+
+    #form1 .column-2 {
+        max-width: 400px;
+        box-shadow: 0 -10px 40px rgba(0,0,0,0.9);
+        border-left: 1px solid #ccc;
+        position: relative;
+    }
+
+    #form1 #column-2-grip
+    {
+        position: absolute;
+        top: 10px;
+        right: 0px;
+        width: 30px;
+        height: 100px;
+        background: #fff;
+        border-radius: 10px 0 0 10px;
+        line-height: 100px;
+        text-align: center;
+        background: #f5f5f5;
+        z-index: 2;
+        box-shadow: 0px 0px 15px rgba(0,0,0,0.6);
+        cursor: pointer;
+    }
+
+    #form1 .navbar-wrapper {
+        height: 105px;
+    }
+
+        #form1 .navbar-wrapper .logo {
+            background: url(https://duckscdn.blob.core.windows.net/imagescontainer/_global/logos/g-logo-vert-green.png) no-repeat;
+            width: 130px;
+            height: 90px;
+            margin: 10px 0 0 30px;
+            background-size: contain;
+            float: left;
+        }
+
+    #form1 .app-title {
+        background: #eef1f3;
+        height: 25px;
+    }
+
+        #form1 .app-title h1 {
+            font-size: 10pt;
+            line-height: 100%;
+            margin: 0;
+            text-align: left;
+            margin: 0 0 0 10px;
+        }
+
+    #form1 .tools-wrapper {
+        position: relative;
+        box-shadow: none;
+        border-bottom: 1px solid #ccc;
+        border-left: 5px solid #eef1f3;
+    }
+    
+    #form1 #report-list-container
+    {
+        margin-top: 0;
+    }
+
+    #form1 .content-wrapper {
+        margin-top: 130px;
+    }
+
+    #form1 #div-map {
+        top: 0px;
+    }
+
+    #form1 #ad-main
+    {
+        width: 728px;
+        height:90px;
+        background: #333;
+        float: right;
+        margin: 15px 20px 0 0;
+    }
+
+    #form1 .divReportDetailNavWrapper {
+        font-size: 12pt;
+    }
+}
+
+@media (min-width: 1050px) {
+    .navbar-wrapper .nav-links {
+        margin: 0px 0 0 30px;
+    }
+}
+
+    @media (min-width: 1200px) {
+        .column-2 {
+            max-width: 500px;
+        }
+
+        #form1 .tools-wrapper {
+            /*width: 480px;*/
+        }
+
+        #form1 #filters-options-wrapper {
+            width: 480px;
+        }
+    }
+
+@media screen and (orientation:portrait) {
+    #div-map {
+
+    }
+    #form1 #report-list-container {
+
+    }
+    #form1 #report-list {
+
+    }
+}
+
+@media screen and (orientation:landscape) {
+    #div-map{
+        height:100%;
+    }
+
+    #form1 #report-list-container {
+    }
+
+    #form1 #report-list {
+    }
+}
+    /*end media queries*/

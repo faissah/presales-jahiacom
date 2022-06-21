@@ -1,5 +1,5 @@
 Manifest-Version: 1.0
-Bnd-LastModified: 1652377497315
+Bnd-LastModified: 1652741082135
 Build-Jdk: 11.0.9
 Built-By: faissah
 Bundle-Category: jahia-module
@@ -10,13 +10,13 @@ Bundle-ManifestVersion: 2
 Bundle-Name: Jahiacom Templates
 Bundle-SymbolicName: jahiacom-templates
 Bundle-Vendor: Jahia Solutions Group SA
-Bundle-Version: 2.0.20
+Bundle-Version: 2.0.20.ducks
 Created-By: Apache Maven Bundle Plugin
 Dynamic-ImportPackage: *
 Implementation-Title: Jahiacom Templates
 Implementation-URL: http://www.jahia.com
 Implementation-Vendor: Jahia Solutions Group SA
-Implementation-Version: 2.0.20
+Implementation-Version: 2.0.20-ducks
 Import-Package: javax.jcr;version="[2.0,3)",org.jahia.services.content,o
  rg.jahia.services.content.nodetypes,org.jahia.services.content.nodetype
  s.renderer,org.jahia.services.render,org.jahia.taglibs;version="[8.0,9)
@@ -67,8 +67,8 @@ Jahia-Source-Control-Connection: scm:git:git@github.com:Jahia/jahiacom.g
 Jahia-Source-Control-DeveloperConnection: scm:git:git@github.com:Jahia/j
  ahiacom.git/jahiacom-templates
 Jahia-Source-Control-Tag: jahiacom-modules-2.0.20
-Jahia-Source-Folders: /Users/faissah/jahia/sources/presales/jahiacom-jah
- iacom-modules-2.0.20/jahiacom-templates
+Jahia-Source-Folders: /Users/faissah/jahia/sources/presales/presales-jah
+ iacom/jahiacom-templates
 Jahia-Static-Resources: /css,/icons,/images,/img,/javascript
 Provide-Capability: com.jahia.services.content;nodetypes:List<String>="j
  cmix:alternativeTitle,jcmix:analystReport,jcmix:banner,jcmix:canonicalU
@@ -87,47 +87,52 @@ Provide-Capability: com.jahia.services.content;nodetypes:List<String>="j
  ependencies;moduleIdentifier=jahiacom-templates,com.jahia.modules.depen
  dencies;moduleIdentifier="Jahiacom Templates"
 Require-Capability: com.jahia.services.content;filter:="(nodetypes=boots
- trap4mix:text)",com.jahia.services.content;filter:="(nodetypes=jmix:dro
- ppableContent)",com.jahia.services.content;filter:="(nodetypes=jmix:edi
- torialContent)",com.jahia.services.content;filter:="(nodetypes=jmix:has
- ExternalProviderExtension)",com.jahia.services.content;filter:="(nodety
- pes=jmix:image)",com.jahia.services.content;filter:="(nodetypes=jmix:li
- st)",com.jahia.services.content;filter:="(nodetypes=jmix:manuallyOrdera
- ble)",com.jahia.services.content;filter:="(nodetypes=jmix:navMenuItem)"
- ,com.jahia.services.content;filter:="(nodetypes=jmix:templateMixin)",co
- m.jahia.services.content;filter:="(nodetypes=jmix:theme)",com.jahia.ser
- vices.content;filter:="(nodetypes=jnt:area)",com.jahia.services.content
- ;filter:="(nodetypes=jnt:category)",com.jahia.services.content;filter:=
- "(nodetypes=jnt:content)",com.jahia.services.content;filter:="(nodetype
- s=jnt:contentFolder)",com.jahia.services.content;filter:="(nodetypes=jn
- t:contentList)",com.jahia.services.content;filter:="(nodetypes=jnt:cont
- entReference)",com.jahia.services.content;filter:="(nodetypes=jnt:conte
- ntTemplate)",com.jahia.services.content;filter:="(nodetypes=jnt:file)",
- com.jahia.services.content;filter:="(nodetypes=jnt:folder)",com.jahia.s
- ervices.content;filter:="(nodetypes=jnt:mainResourceDisplay)",com.jahia
- .services.content;filter:="(nodetypes=jnt:module)",com.jahia.services.c
- ontent;filter:="(nodetypes=jnt:modules)",com.jahia.services.content;fil
- ter:="(nodetypes=jnt:page)",com.jahia.services.content;filter:="(nodety
- pes=jnt:pageTemplate)",com.jahia.services.content;filter:="(nodetypes=j
- nt:portletFolder)",com.jahia.services.content;filter:="(nodetypes=jnt:t
- emplate)",com.jahia.services.content;filter:="(nodetypes=jnt:templatesF
- older)",com.jahia.services.content;filter:="(nodetypes=jnt:translation)
- ",com.jahia.services.content;filter:="(nodetypes=jnt:virtualsite)",com.
- jahia.services.content;filter:="(nodetypes=mix:title)",com.jahia.servic
- es.content;filter:="(nodetypes=nt:hierarchyNode)",com.jahia.modules.dep
- endencies;filter:="(moduleIdentifier=animate)",com.jahia.modules.depend
- encies;filter:="(moduleIdentifier=bootstrap4-components)",com.jahia.mod
- ules.dependencies;filter:="(moduleIdentifier=bootstrap4-core)",com.jahi
- a.modules.dependencies;filter:="(moduleIdentifier=default)",com.jahia.m
- odules.dependencies;filter:="(moduleIdentifier=font-awesome)",com.jahia
- .modules.dependencies;filter:="(moduleIdentifier=jquery)",com.jahia.mod
- ules.dependencies;filter:="(moduleIdentifier=search)",com.jahia.modules
- .dependencies;filter:="(moduleIdentifier=popperjs)",com.jahia.modules.d
- ependencies;filter:="(moduleIdentifier=facets)",osgi.ee;filter:="(&(osg
- i.ee=JavaSE)(version=1.8))"
+ trap4mix:createContainer)",com.jahia.services.content;filter:="(nodetyp
+ es=bootstrap4mix:createRow)",com.jahia.services.content;filter:="(nodet
+ ypes=bootstrap4mix:createSection)",com.jahia.services.content;filter:="
+ (nodetypes=bootstrap4mix:predefinedGrid)",com.jahia.services.content;fi
+ lter:="(nodetypes=bootstrap4mix:text)",com.jahia.services.content;filte
+ r:="(nodetypes=bootstrap4nt:grid)",com.jahia.services.content;filter:="
+ (nodetypes=jmix:droppableContent)",com.jahia.services.content;filter:="
+ (nodetypes=jmix:editorialContent)",com.jahia.services.content;filter:="
+ (nodetypes=jmix:hasExternalProviderExtension)",com.jahia.services.conte
+ nt;filter:="(nodetypes=jmix:image)",com.jahia.services.content;filter:=
+ "(nodetypes=jmix:list)",com.jahia.services.content;filter:="(nodetypes=
+ jmix:manuallyOrderable)",com.jahia.services.content;filter:="(nodetypes
+ =jmix:navMenuItem)",com.jahia.services.content;filter:="(nodetypes=jmix
+ :templateMixin)",com.jahia.services.content;filter:="(nodetypes=jmix:th
+ eme)",com.jahia.services.content;filter:="(nodetypes=jnt:area)",com.jah
+ ia.services.content;filter:="(nodetypes=jnt:category)",com.jahia.servic
+ es.content;filter:="(nodetypes=jnt:content)",com.jahia.services.content
+ ;filter:="(nodetypes=jnt:contentFolder)",com.jahia.services.content;fil
+ ter:="(nodetypes=jnt:contentList)",com.jahia.services.content;filter:="
+ (nodetypes=jnt:contentReference)",com.jahia.services.content;filter:="(
+ nodetypes=jnt:contentTemplate)",com.jahia.services.content;filter:="(no
+ detypes=jnt:file)",com.jahia.services.content;filter:="(nodetypes=jnt:f
+ older)",com.jahia.services.content;filter:="(nodetypes=jnt:mainResource
+ Display)",com.jahia.services.content;filter:="(nodetypes=jnt:module)",c
+ om.jahia.services.content;filter:="(nodetypes=jnt:modules)",com.jahia.s
+ ervices.content;filter:="(nodetypes=jnt:page)",com.jahia.services.conte
+ nt;filter:="(nodetypes=jnt:pageTemplate)",com.jahia.services.content;fi
+ lter:="(nodetypes=jnt:portletFolder)",com.jahia.services.content;filter
+ :="(nodetypes=jnt:template)",com.jahia.services.content;filter:="(nodet
+ ypes=jnt:templatesFolder)",com.jahia.services.content;filter:="(nodetyp
+ es=jnt:translation)",com.jahia.services.content;filter:="(nodetypes=jnt
+ :virtualsite)",com.jahia.services.content;filter:="(nodetypes=mix:title
+ )",com.jahia.services.content;filter:="(nodetypes=nt:hierarchyNode)",co
+ m.jahia.modules.dependencies;filter:="(moduleIdentifier=animate)",com.j
+ ahia.modules.dependencies;filter:="(moduleIdentifier=bootstrap4-compone
+ nts)",com.jahia.modules.dependencies;filter:="(moduleIdentifier=bootstr
+ ap4-core)",com.jahia.modules.dependencies;filter:="(moduleIdentifier=de
+ fault)",com.jahia.modules.dependencies;filter:="(moduleIdentifier=font-
+ awesome)",com.jahia.modules.dependencies;filter:="(moduleIdentifier=jqu
+ ery)",com.jahia.modules.dependencies;filter:="(moduleIdentifier=search)
+ ",com.jahia.modules.dependencies;filter:="(moduleIdentifier=popperjs)",
+ com.jahia.modules.dependencies;filter:="(moduleIdentifier=facets)",osgi
+ .ee;filter:="(&(osgi.ee=JavaSE)(version=1.8))"
 Service-Component: OSGI-INF/jahiacomLinkTypeInitializer.xml,OSGI-INF/jah
  iacomResourceTypesInitializer.xml
 Specification-Title: Jahiacom Templates
 Specification-Vendor: Jahia Solutions Group SA
-Specification-Version: 2.0.20
+Specification-Version: 2.0.20-ducks
 Tool: Bnd-2.4.0.201411031534

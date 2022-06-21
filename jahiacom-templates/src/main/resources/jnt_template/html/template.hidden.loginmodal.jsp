@@ -56,18 +56,15 @@
                         </c:if>
 
                     <div class="form-group">
-                        <c:set var="forgotPasswordPageUrl" value="${renderContext.site.properties.forgotPasswordPageUrl.string}"/>
-                        <c:if test="${empty forgotPasswordPageUrl || forgotPasswordPageUrl eq 'https://'}">
-                            <c:set var="forgotPasswordPageNode" value="${renderContext.site.properties.forgotPasswordPage.node}"/>
-                            <c:choose>
-                                <c:when test="${! empty forgotPasswordPageNode}">
-                                    <c:url var="forgotPasswordPageUrl" value="${forgotPasswordPageNode.url}" context="/"/>
-                                </c:when>
-                                <c:otherwise>
-                                    <c:set var="forgotPasswordPageUrl" value="#"/>
-                                </c:otherwise>
-                            </c:choose>
-                        </c:if>
+                        <c:set var="forgotPasswordPageNode" value="${renderContext.site.properties.forgotPasswordPage.node}"/>
+                        <c:choose>
+                            <c:when test="${! empty forgotPasswordPageNode}">
+                                <c:url var="forgotPasswordPageUrl" value="${forgotPasswordPageNode.url}" context="/"/>
+                            </c:when>
+                            <c:otherwise>
+                                <c:set var="forgotPasswordPageUrl" value="#"/>
+                            </c:otherwise>
+                        </c:choose>
                         <label for="username"><fmt:message key='label.username'/></label>
                         <input type="text" class="form-control form-control" name="username" id="username" placeholder="<fmt:message key='label.username'/>"/>
                     </div>
@@ -109,18 +106,16 @@
                 </script>
             </div>
             <div class="modal-footer justify-content-center flex-column bg-gris mb-0">
-                <c:set var="registerPageUrl" value="${renderContext.site.properties.registerPageUrl.string}"/>
-                <c:if test="${empty registerPageUrl || registerPageUrl eq 'https://'}">
-                    <c:set var="registerPageNode" value="${renderContext.site.properties.registerPage.node}"/>
-                    <c:choose>
-                        <c:when test="${! empty registerPageNode}">
-                            <c:url var="registerPageUrl" value="${registerPageNode.url}" context="/"/>
-                        </c:when>
-                        <c:otherwise>
-                            <c:set var="registerPageUrl" value="#"/>
-                        </c:otherwise>
-                    </c:choose>
-                </c:if>
+                <c:set var="registerPageNode" value="${renderContext.site.properties.registerPage.node}"/>
+                <c:choose>
+                    <c:when test="${! empty registerPageNode}">
+                        <c:url var="registerPageUrl" value="${registerPageNode.url}" context="/"/>
+                    </c:when>
+                    <c:otherwise>
+                        <c:set var="registerPageUrl" value="#"/>
+                    </c:otherwise>
+                </c:choose>
+
 
                 <div><small><fmt:message key="label.needAccount"/></small></div>
                 <div><small><a href="${registerPageUrl}" class="text-center text-primary"><fmt:message key="label.newUser"/></a></small></div>

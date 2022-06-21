@@ -53,7 +53,7 @@
   </parent>
   <groupId>org.jahia.modules</groupId>
   <artifactId>jahiacom-templates</artifactId>
-  <version>2.0.20</version>
+  <version>2.0.20-ducks</version>
   <packaging>bundle</packaging>
   <name>Jahiacom Templates</name>
   <description>This is the custom profile module (Jahiacom Templates) for running on a Digital Experience Manager

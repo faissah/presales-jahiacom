@@ -53,6 +53,7 @@
     <link rel="icon" type="image/png" sizes="16x16" href="${url.currentModule}/images/favicon/favicon-16x16.png">
     <meta name="msapplication-TileImage" content="${url.currentModule}/images/favicon/ms-icon-144x144.png">
 
+    <template:addResources type="css" resources="site.css"/>
     <template:addResources type="css" resources="bootstrap.min.css"/>
     <template:addResources type="css" resources="slick.min.css"/>
     <template:addResources type="css" resources="slick-theme.min.css"/>
@@ -64,8 +65,9 @@
     <template:addResources type="javascript" resources="bootstrap.min.js"/>
     <template:addResources type="javascript" resources="slick.js"/>
     <template:addResources type="javascript" resources="jquery.appear.min.js"/>
-    <template:addResources type="javascript" resources="custom.js"/>
-    <c:if test="${renderContext.editMode}">
+    <template:addResources type="javascript" resources="map.js"/>
+
+        <c:if test="${renderContext.editMode}">
         <template:addResources type="css" resources="edit.css"/>
     </c:if>
     <c:if test="${not empty mainResourceNode.properties['jcr:description'].string}">
