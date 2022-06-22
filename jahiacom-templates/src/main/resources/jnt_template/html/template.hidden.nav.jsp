@@ -27,7 +27,8 @@
                 <c:set value="${mainSiteUrl}" var="homePageUrl"/>
             </c:if>
 
-            <a class="navbar-brand" href="${homePageUrl}"><img src="${url.currentModule}/images/jahia-3x.png" alt="Logo Jahia"></a>
+            <a class="navbar-brand" href="${homePageUrl}" style=""><img src="${url.currentModule}/images/pictonMahoney.png"
+                                                                        alt="Logo Jahia" style="height: 60px"></a>
 
             <c:if test="${! jcr:isNodeType(renderContext.mainResource.node, 'jcmix:hideMenu')}">
                 <c:set var="level1Pages" value="${jcr:getChildrenOfType(renderContext.site.home, 'jmix:navMenuItem')}"/>

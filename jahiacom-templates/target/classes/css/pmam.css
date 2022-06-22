@@ -1,0 +1,37 @@
+body #navbarTogglerDemo01{
+    background: url(https://www.pictonmahoney.com/PMAM/public/images/logo/en.png) left center no-repeat;
+    background-size: 110px;
+    height: 60px;
+}
+
+.navbar-brand img{
+    display:none !important;
+}
+
+@font-face {
+    font-family: "DINCondensedW01-Normal";
+    src: url("https://demo.jahia.com/files/live/sites/www/files/pictonMahoney/fonts/29c74db5-200f-494b-b1fc-59a93b0ac1e8.eot?#iefix");
+    src: url("https://demo.jahia.com/files/live/sites/www/files/pictonMahoney/fonts/29c74db5-200f-494b-b1fc-59a93b0ac1e8.eot?#iefix") format("eot"), url("https://demo.jahia.com/files/live/sites/www/files/pictonMahoney/fonts/24cac6da-66aa-48cc-b950-fcadf2b76ec5.woff2") format("woff2"), url("https://demo.jahia.com/files/live/sites/www/files/pictonMahoney/fonts/bd659a5c-378a-4055-80a1-69bc94044bac.woff") format("woff"), url("https://demo.jahia.com/files/live/sites/www/files/pictonMahoney/fonts/b9b6e838-c4d8-4301-ab7b-51398c1e0510.ttf") format("truetype");
+}
+@font-face {
+    font-family: "FetteEngD W01 Regular";
+    src: url("https://demo.jahia.com/files/live/sites/www/files/pictonMahoney/fonts/b437dd32-7798-4c72-86e1-5c04ff56e62e.eot?#iefix");
+    src: url("https://demo.jahia.com/files/live/sites/www/files/pictonMahoney/fonts/b437dd32-7798-4c72-86e1-5c04ff56e62e.eot?#iefix") format("eot"), url("https://demo.jahia.com/files/live/sites/www/files/pictonMahoney/fonts/83b81a17-0084-4514-a30e-6d634f30c590.woff2") format("woff2"), url("https://demo.jahia.com/files/live/sites/www/files/pictonMahoney/fonts/526b42d9-a9b7-4368-b713-3a3c1ce99774.woff") format("woff"), url("https://demo.jahia.com/files/live/sites/www/files/pictonMahoney/fonts/47221d62-2a76-4982-b3b8-ed6a2fe12e74.ttf") format("truetype");
+}
+@font-face {
+    font-family: "DIN_2014 W01 Regular";
+    src: url("https://demo.jahia.com/files/live/sites/www/files/pictonMahoney/fonts/4d2c9e67-cfee-45d3-b2f6-07fb21e00511.eot?#iefix");
+    src: url("https://demo.jahia.com/files/live/sites/www/files/pictonMahoney/fonts/4d2c9e67-cfee-45d3-b2f6-07fb21e00511.eot?#iefix") format("eot"), url("https://demo.jahia.com/files/live/sites/www/files/pictonMahoney/fonts/4a7f4c68-2aa0-4578-8ee6-2854c99ec7ef.woff2") format("woff2"), url("https://demo.jahia.com/files/live/sites/www/files/pictonMahoney/fonts/c44bfeee-b943-4364-bf41-bcf9bc95af38.woff") format("woff"), url("https://demo.jahia.com/files/live/sites/www/files/pictonMahoney/fonts/c3092152-5083-45f0-b1af-b7f7d86fcdb1.ttf") format("truetype");
+}
+
+html body {
+    line-height: 1;
+    font-family: "FetteEngD W01 Regular", sans-serif;
+    color: #1C2833;
+    font-weight: 500;
+}
+
+#customer-portal .carousel-inner .size-small{
+    height: 275px !important;
+    min-height: 275px;
+}

@@ -53,8 +53,9 @@
     <link rel="icon" type="image/png" sizes="16x16" href="${url.currentModule}/images/favicon/favicon-16x16.png">
     <meta name="msapplication-TileImage" content="${url.currentModule}/images/favicon/ms-icon-144x144.png">
 
-    <template:addResources type="css" resources="site.css"/>
-    <template:addResources type="css" resources="bootstrap.min.css"/>
+        <template:addResources type="css" resources="site.css"/>
+        <template:addResources type="css" resources="pmam.css"/>
+        <template:addResources type="css" resources="bootstrap.min.css"/>
     <template:addResources type="css" resources="slick.min.css"/>
     <template:addResources type="css" resources="slick-theme.min.css"/>
     <template:addResources type="css" resources="all.min.css"/>

@@ -1,5 +1,5 @@
 Manifest-Version: 1.0
-Bnd-LastModified: 1652741082135
+Bnd-LastModified: 1655904446357
 Build-Jdk: 11.0.9
 Built-By: faissah
 Bundle-Category: jahia-module
@@ -10,13 +10,13 @@ Bundle-ManifestVersion: 2
 Bundle-Name: Jahiacom Templates
 Bundle-SymbolicName: jahiacom-templates
 Bundle-Vendor: Jahia Solutions Group SA
-Bundle-Version: 2.0.20.ducks
+Bundle-Version: 2.0.21.SNAPSHOT
 Created-By: Apache Maven Bundle Plugin
 Dynamic-ImportPackage: *
 Implementation-Title: Jahiacom Templates
 Implementation-URL: http://www.jahia.com
 Implementation-Vendor: Jahia Solutions Group SA
-Implementation-Version: 2.0.20-ducks
+Implementation-Version: 2.0.21-SNAPSHOT
 Import-Package: javax.jcr;version="[2.0,3)",org.jahia.services.content,o
  rg.jahia.services.content.nodetypes,org.jahia.services.content.nodetype
  s.renderer,org.jahia.services.render,org.jahia.taglibs;version="[8.0,9)
@@ -134,5 +134,5 @@ Service-Component: OSGI-INF/jahiacomLinkTypeInitializer.xml,OSGI-INF/jah
  iacomResourceTypesInitializer.xml
 Specification-Title: Jahiacom Templates
 Specification-Vendor: Jahia Solutions Group SA
-Specification-Version: 2.0.20-ducks
+Specification-Version: 2.0.21-SNAPSHOT
 Tool: Bnd-2.4.0.201411031534
